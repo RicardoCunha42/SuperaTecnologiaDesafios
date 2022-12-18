@@ -28,7 +28,6 @@ public class RespostaPrimeiroDesafio{
         impar.sort((num1, num2) -> Integer.compare(num1, num2));
         Collections.reverse(impar);
         
-        System.out.println("--------------------------------");
         par.forEach(System.out::println);
         impar.forEach(System.out::println);
 
