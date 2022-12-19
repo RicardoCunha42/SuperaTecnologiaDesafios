@@ -8,13 +8,13 @@ import java.util.Scanner;
 public class RespostaPrimeiroDesafio{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Integer linhas = scan.nextInt();
+        int linhas = scan.nextInt();
 
         List<Integer> par = new ArrayList<>();
         List<Integer> impar = new ArrayList<>();
 
         for(int i = 0; i < linhas; i++){
-            Integer num = scan.nextInt();
+            int num = scan.nextInt();
             if(num % 2 == 0){
                 par.add(num);
 
@@ -24,8 +24,8 @@ public class RespostaPrimeiroDesafio{
             }
         }
 
-        par.sort((num1, num2) -> Integer.compare(num1, num2));
-        impar.sort((num1, num2) -> Integer.compare(num1, num2));
+        Collections.sort(par);
+        Collections.sort(impar);
         Collections.reverse(impar);
         
         par.forEach(System.out::println);
