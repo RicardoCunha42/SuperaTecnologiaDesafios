@@ -9,8 +9,8 @@ public class RespostaSegundoDesafio {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         BigDecimal valor = scan.nextBigDecimal().setScale(2, RoundingMode.HALF_EVEN);
-        Double[] notas = {100.00, 50.00, 20.00, 10.00, 5.00, 2.00};
-        Double[] moedas = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
+        double[] notas = {100.00, 50.00, 20.00, 10.00, 5.00, 2.00};
+        double[] moedas = {1.00, 0.50, 0.25, 0.10, 0.05, 0.01};
         
         System.out.println("NOTAS:");
         for(int i = 0; i < notas.length; i++) {
